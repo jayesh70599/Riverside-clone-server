@@ -210,10 +210,10 @@ const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`🚀 API Server is listening on port ${PORT}`));
 
 // Start the PeerJS Server on a separate port
-const peerServer = PeerServer({
-  port: 9000,
-  path: '/myapp'
-});
+// const peerServer = PeerServer({
+//   port: 9000,
+//   path: '/myapp'
+// });
 
 peerServer.on('connection', (client) => {
   console.log(`PeerJS client connected: ${client.getId()}`);
