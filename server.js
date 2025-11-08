@@ -215,12 +215,12 @@ server.listen(PORT, () => console.log(`🚀 API Server is listening on port ${PO
 //   path: '/myapp'
 // });
 
-peerServer.on('connection', (client) => {
-  console.log(`PeerJS client connected: ${client.getId()}`);
-});
+// peerServer.on('connection', (client) => {
+//   console.log(`PeerJS client connected: ${client.getId()}`);
+// });
 
-peerServer.on('disconnect', (client) => {
-  console.log(`PeerJS client disconnected: ${client.getId()}`);
-});
+// peerServer.on('disconnect', (client) => {
+//   console.log(`PeerJS client disconnected: ${client.getId()}`);
+// });
 
 console.log('PeerJS server is running on port 9000');
