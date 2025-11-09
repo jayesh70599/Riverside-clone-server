@@ -215,7 +215,7 @@ const checkAndTriggerWorker = async (sessionId) => {
     if (sessionRecordings.length > 0 && sessionRecordings.length === completedRecordings.length) {
         console.log(`All ${sessionRecordings.length} recordings for session ${sessionId} are complete. Triggering worker.`);
         try {
-            await axios.post('http://localhost:5001/create-combined-video', { sessionId });
+            await axios.post('http://13.127.74.242:5001/create-combined-video', { sessionId });
         } catch (error) {
             console.error('Error triggering worker service:', error.message);
         }
